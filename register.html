@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <div class="registration-container">
+    <h1 class="form-title">Student Registration Form</h1>
+
+    <form class="registration-form">
+      <div class="form-grid">
+        <!-- Left column -->
+        <div class="form-column">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="form-column">
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="nonbinary">Non-binary</option>
+              <option value="prefer_not">Prefer not to say</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="course">College Course</label>
+            <select id="course" name="course" required>
+              <option value="">Select a course</option>
+              <option value="cs">Computer Science</option>
+              <option value="eng">Engineering</option>
+              <option value="biz">Business Administration</option>
+              <option value="art">Fine Arts</option>
+              <option value="med">Medicine</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-button">Register</button>
+    </form>
+  </div>
+</body>
+</html>

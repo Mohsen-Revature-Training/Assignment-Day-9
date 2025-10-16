@@ -1,0 +1,91 @@
+/* font and colors for the website */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+:root {
+  --dark: #212529;
+  --light: #D5CEC2;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-container {
+  max-width: 800px;
+  padding: 40px 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--light);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid var(--light);
+  margin-right: 20px;
+}
+
+.profile-name {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.profile-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--light);
+  opacity: 0.8;
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
+h3 {
+  border-left: 4px solid var(--light);
+  padding-left: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+  color: var(--light);
+  opacity: 0.9;
+}
+
+/* Experience */
+.experience-item {
+  margin-bottom: 25px;
+  background-color: rgba(213, 206, 194, 0.05);
+  border-radius: 8px;
+  padding: 15px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.experience-item:hover {
+  background-color: rgba(213, 206, 194, 0.15);
+}
+
+.experience-item h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.experience-item p:first-of-type {
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
